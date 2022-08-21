@@ -3,9 +3,9 @@
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
-
+<select id="ConnectionList">
+</select>
 
 <div class="container">
     <h1 id="Score"></h1>
@@ -13,6 +13,8 @@
     <h4 id="turn"></h4>
     <button class="btn btn-outline-primary" id="submitButton">PRESS ME TO SEE MAGIC</button>
 </div>
+
+
 
 @for(int i = 0; i < 9; i++){
     <button class="btn btn-outline-secondary" style="height: 100px; width: 100px; font-size: 50px;" id="button_@i"> </button>
