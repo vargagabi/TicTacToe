@@ -28,7 +28,7 @@ var connection = new signalR.HubConnectionBuilder().withUrl("/mainhub").build();
 let myConnectionId;
 //VARIABLES
 $(document).ready(function () {
-
+    
     connectionList.append('<option disabled selected value="0">Connected Users</option>');
     //Set user name, no validation right now, TODO
     $("#welcomeUser").text(`Welcome ${sessionStorage.getItem("userName") || "Player"}`);
